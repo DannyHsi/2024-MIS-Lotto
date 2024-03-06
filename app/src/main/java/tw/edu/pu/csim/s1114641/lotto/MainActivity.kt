@@ -10,11 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var txv : TextView = findViewById(R.id.txv)
+        var txv: TextView = findViewById(R.id.txv)
         txv.text = "0"
     }
-    fun happy(v: View){
+
+    fun happy(v: View) {
         var txv: TextView = findViewById(R.id.txv)
         txv.text = (1..100).random().toString()
 
     }
+}
